@@ -1,12 +1,130 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="F-Style.css" />
+    <link rel="icon" type="image/x-icon" href="fimage/bose icon.jfif">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <div id="header">
+    </div>
 </head>
-<body>
+<body id="body">
+  <script src="f-javas.js"></script>
+  <button onclick="ImageWhite()">white</button>
+  <button onclick="ImageBlack()">Black</button>
+    <div id="table">
+        <table>
+            <tr>
+              <th >  </th>
+              <th >
+                <img src="fimage/bose1 black.png" width="300px", height="300px" id="bose1">
+              </th>
+              <th>
+                <img src="fimage/bose2 black.png" width="250px", height="250px" id="bose2">
+              </th>
+              <th>
+                <img src="fimage/bose3 black.png" width="250px", height="250px" id="bose3">
+              </th>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>quietcomfort</td>
+              <td>Bose 700</td>
+              <td>quietcomfort ii earbuds</td>
+            </tr>
+            <tr>
+              <td>battery life</td>
+              <td>24 hours</td>
+              <td>20</td>
+              <td>6 hours</td>
+            </tr>
+            <tr>
+              <td>Max volume</td>
+              <td>120dB</td>
+              <td>100dB</td>
+              <td>90dB</td>
+            </tr>
+            <tr>
+              <td>Noise cancelling</td>
+              <td>9 levels of noise cancelling</td>
+              <td>11 levels of noise cancelling</td>
+              <td>Active Noise cancelling</td>
+            </tr>
+            <tr>
+              <td>wired included</td>
+              <td>yes</td>
+              <td>yes</td>
+              <td>no</td>
+            </tr>
+            <tr>
+              <td>microphone</td>
+              <td>Built in</td>
+              <td>Built in</td>
+              <td>Built in</td>
+            </tr>
+            <tr>
+              <td>weight</td>
+              <td>240g</td>
+              <td>255</td>
+              <td>12.48g(6.24g each)</td>
+            </tr>
+            <tr>
+              <td>earcup</td>
+              <td>Over-ear</td>
+              <td>Over-ear</td>
+              <td>in-ear</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>€290</td>
+              <td>€249</td>
+              <td>€244.95</td>
+            </tr>
+            
+          </table>
+    </div>
+
+
+
+
+
+
+    <div>
+      <input type="text" id="userInput" placeholder="asksomething...">
+      <button onclick="respond()">Enter</button>
+      <div id="response"></div>
+    </div>
+  
+    <script>
+      function respond() {
+        var input = document.getElementById('userInput').value;
+        var output = document.getElementById('response');
+        if (input.toLowerCase() === 'hi' ) {
+          output.textContent = 'Hello';
+        } else if (input.toLowerCase() === 'no') {
+          output.textContent = 'Yes';
+        } else { 
+          if (Math.random() < 0.2) {
+            output.textContent = 'I dont kow';
+          } else if (Math.random() < 0.4) {
+            output.textContent = 'Ask google';
+          } else if (Math.random() < 0.6) {
+            output.textContent = 'Let me think about it';
+          } else if (Math.random() < 0.8) {
+            output.textContent = 'why would i know that';
+          } else {
+            output.textContent = 'stupid questions get stupid responses';
+          }
+        }
+      }
+    </script>
+
+
+    
     
 </body>
 </html>
