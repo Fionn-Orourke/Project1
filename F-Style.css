@@ -1,0 +1,43 @@
+#header {
+    background-image: url(fimage/OIP.png);
+    background-size: contain;
+    padding: 20px 10px;
+    color: darkgrey;
+    height: 50px;
+}
+img{
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+#body{
+    background-color: darkslategrey;
+    color: navy;
+}
+#th, td{
+    border: 2px solid;
+    border-color: rgb(153, 143, 36);
+    background-color: gray;
+    border-style: dashed;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+
+}
+#tr{
+    border-color: rgb(255, 255, 255);
+}
+#chat{
+    color: greenyellow;
+    background-color: black;
+}
+#response {
+    margin-top: 10px;
+    color: greenyellow;
+    background-color: black;
+    width: 200px;
+}
+#userInput{
+    color: greenyellow;
+    background-color: black;
+}
