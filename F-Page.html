@@ -1,12 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="F-Style.css" />
+    <link rel="icon" type="image/x-icon" href="fimage/bose icon.jfif">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <div id="header">
+    </div>
 </head>
-<body>
+<body id="body">
+    <div id="table">
+        <table>
+            <tr>
+              <th >product</th>
+              <th >BOSE1</th>
+              <th>BOSE2</th>
+              <th>BOSE3</th>
+            </tr>
+            <tr>
+              <td>battery life</td>
+              <td>f1</td>
+              <td>f1</td>
+              <td>f1</td>
+            </tr>
+            <tr>
+              <td>Max volume</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Noise cancelling</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>wired included</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>microphone</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>weight</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>earcup</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>f2</td>
+              <td>f2</td>
+              <td>94</td>
+            </tr>
+            
+          </table>
+    </div>
+
+
+
+
+
+
+    <div>
+      <input type="text" id="userInput" placeholder="asksomething...">
+      <button onclick="respond()">Enter</button>
+      <div id="response"></div>
+    </div>
+  
+    <script>
+      function respond() {
+        var input = document.getElementById('userInput').value;
+        var output = document.getElementById('response');
+        if (input.toLowerCase() === 'hi' ) {
+          output.textContent = 'Hello';
+        } else if (input.toLowerCase() === 'no') {
+          output.textContent = 'Yes';
+        } else { 
+          if (Math.random() < 0.2) {
+            output.textContent = 'I dont kow';
+          } else if (Math.random() < 0.4) {
+            output.textContent = 'Ask google';
+          } else if (Math.random() < 0.6) {
+            output.textContent = 'Let me think about it';
+          } else if (Math.random() < 0.8) {
+            output.textContent = 'why would i know that';
+          } else {
+            output.textContent = 'stupid questions get stupid responses';
+          }
+        }
+      }
+    </script>
+
+
+    
     
 </body>
 </html>
