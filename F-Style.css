@@ -12,19 +12,24 @@ img{
 }
 body {
     background-image: url("fimage/background.jfif");
+    display:flow-root;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 #th, td{
     border: 2px solid;
-    border-color: rgb(153, 143, 36);
-    background-color: gray;
-    border-style: dashed;
-    color: black;
+    border-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style:outset;
+    color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: larger;
+    border-width: 5px;
 
 }
 #tr{
-    border-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255, 50);
 }
 #chat{
     color: greenyellow;
@@ -39,4 +44,73 @@ body {
 #userInput{
     color: greenyellow;
     background-color: black;
+}
+table{
+    width: 100%;
+    height: max-content;
+    font-size: x-large;
+}
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#whiteButton, #blackButton {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);  /* Shadow effect */
+}
+
+#whiteButton {
+    background-color: white;
+    color: black;
+}
+
+
+#blackButton {
+    background-color: black;
+    color: white;
+}
+#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#checkbutton {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+#checkbutton:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+#cost {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    font-size: 24px;
 }

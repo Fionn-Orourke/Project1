@@ -13,9 +13,11 @@
     </div>
 </head>
 <body id="body">
-  <script src="f-javas.js"></script>
-  <button onclick="ImageWhite()">white</button>
-  <button onclick="ImageBlack()">Black</button>
+  <script src="f-script.js"></script>
+  <div id="button-container">
+    <button onclick="ImageWhite()" id="whiteButton">White</button>
+    <button onclick="ImageBlack()" id="blackButton">Black</button>
+</div>
     <div id="table">
         <table>
             <tr>
@@ -84,8 +86,25 @@
               <td>€249</td>
               <td>€244.95</td>
             </tr>
+            <tr>
+              <td>Quantity</td>
+              <td>
+                <input type="number" id="b1">
+              </td>
+              <td>
+                <input type="number" id="b2">
+              </td>
+              <td>
+                <input type="number" id="b3">
+              </td>
+            </tr>
             
           </table>
+    </div>
+    <div id="checkout">
+      <button id="checkbutton" onclick="checkout()">Checkout</button>
+      <br>
+      <p id="cost" ></p>
     </div>
 
 
