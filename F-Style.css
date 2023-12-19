@@ -115,3 +115,24 @@ table{
     text-shadow: 0 0 7px #931111, 0 0 10px #6d0a0a, 0 0 21px #fff, 0 0 42px #0fa, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
     font-size: 24px;
 }
+#home{
+    width: 80px;
+    height: 40px;
+    font-size: x-large;
+    background-color: rgba(33, 33, 33, 0.882);
+    color: white;
+    padding-left: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+#proc{
+    color: #fff;
+    text-shadow: 0 0 7px #6f0e0e, 0 0 10px #800d0d, 0 0 21px #b03636, 0 0 42px rgb(148, 62, 22), 0 0 82px rgb(255, 123, 0);
+    font-size: 24px;
+}
+
+#ceed{
+    background-color: #931111;
+    color: black;
+    font-size: 18px;
+}

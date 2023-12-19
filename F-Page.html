@@ -3,16 +3,26 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="F-Style.css" />
-    <link rel="icon" type="image/x-icon" href="fimage/bose icon.png">
+    
+    <link rel="icon" type="image/x-icon" href="fimage/bose icon.png"> 
+    <br>
+    
+
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bose</title>
+    
 
     <div id="header">
     </div>
 </head>
 <body id="body">
+  <div id="home">
+    <a href="index.html" id="home" >home</a>
+  </div>
+  
   <script src="f-script.js"></script>
   <div id="button-container">
     <button onclick="ImageWhite()" id="whiteButton">White</button>
@@ -106,45 +116,10 @@
       <button id="checkbutton" onclick="checkout()">Checkout</button>
       <br>
       <p id="cost" ></p>
+      <hr>
+      <p id="proc" >Proceed with payment</p>
+      <button id="ceed" onclick="confirm()">Proceed</button>
     </div>
-
-
-
-
-
-
-    <div>
-      <input type="text" id="userInput" placeholder="asksomething...">
-      <button onclick="respond()">Enter</button>
-      <div id="response"></div>
-    </div>
-  
-    <script>
-      function respond() {
-        var input = document.getElementById('userInput').value;
-        var output = document.getElementById('response');
-        if (input.toLowerCase() === 'hi' ) {
-          output.textContent = 'Hello';
-        } else if (input.toLowerCase() === 'no') {
-          output.textContent = 'Yes';
-        } else { 
-          if (Math.random() < 0.2) {
-            output.textContent = 'I dont kow';
-          } else if (Math.random() < 0.4) {
-            output.textContent = 'Ask google';
-          } else if (Math.random() < 0.6) {
-            output.textContent = 'Let me think about it';
-          } else if (Math.random() < 0.8) {
-            output.textContent = 'why would i know that';
-          } else {
-            output.textContent = 'stupid questions get stupid responses';
-          }
-        }
-      }
-    </script>
-
-
-    
     
 </body>
 </html>
