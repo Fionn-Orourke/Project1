@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="DP-Style.css" />
+    <link rel="icon" type="image/x-icon" href="DPimage/sony icon.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <div id="header">
+    </div>
 </head>
-<body>
+<body id="body">
+  <script src="DP-script.js"></script>
+  <div id="button-container">
+    <button onclick="ImageWhite()" id="whiteButton">White</button>
+    <button onclick="ImageBlack()" id="blackButton">Black</button>
+</div>
+
+    <div id="table">
+        <table>
+            <tr>
+              <th >  </th>
+              <th >
+                <img src="DPimage/sony1black2.png" width="300px", height="300px" id="sony1">
+              </th>
+              <th>
+                <img src="DPimage/sony2black2.png" width="250px", height="250px" id="sony2">
+              </th>
+              <th>
+                <img src="DPimage/sony3black2.png" width="250px", height="250px" id="sony3">
+              </th>
+            </tr>
+            <tr>
+              <td>Name</td>
+              <td>WH-1000XM4</td>
+              <td>WF-C700N</td>
+              <td>WH-1000XM5</td>
+            </tr>
+            <tr>
+              <td>Battery Life</td>
+              <td>30 Hours</td>
+              <td>15 Hours</td>
+              <td>30 hours</td>
+            </tr>
+            <tr>
+                <td>Noise cancelling</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+            <tr>
+              <td>Special Feature</td>
+              <td>Foldable Design</td>
+              <td>Easy for Storage</td>
+              <td>Auto Noise Canceling Optimizer</td>
+            </tr>
+            <tr>
+              <td>wired included</td>
+              <td>yes</td>
+              <td>no</td>
+              <td>yes</td>
+            </tr>
+            <tr>
+              <td>microphone</td>
+              <td>Built in</td>
+              <td>Built in</td>
+              <td>Built in</td>
+            </tr>
+            <tr>
+              <td>Multi Device Connection</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Earcup</td>
+              <td>Over-ear</td>
+              <td>In-ear</td>
+              <td>Over-ear</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>€230</td>
+              <td>€80</td>
+              <td>€330</td>
+            </tr>
+            <tr>
+              <td>Quantity</td>
+              <td>
+                <input type="number" id="s1">
+              </td>
+              <td>
+                <input type="number" id="s2">
+              </td>
+              <td>
+                <input type="number" id="s3">
+              </td>
+            </tr>
+            
+          </table>
+    </div>
+    <div id="checkout">
+      <button id="checkbutton" onclick="checkout()">Checkout</button>
+      <br>
+      <p id="cost" ></p>
+    </div>
+
+
+
+
+
+
+    <div>
+      <input type="text" id="userInput" placeholder="asksomething...">
+      <button onclick="respond()">Enter</button>
+      <div id="response"></div>
+    </div>
+  
+    <script>
+      function respond() {
+        var input = document.getElementById('userInput').value;
+        var output = document.getElementById('response');
+        if (input.toLowerCase() === 'hi' ) {
+          output.textContent = 'Hello';
+        } else if (input.toLowerCase() === 'no') {
+          output.textContent = 'Yes';
+        } else { 
+          if (Math.random() < 0.2) {
+            output.textContent = 'I dont kow';
+          } else if (Math.random() < 0.4) {
+            output.textContent = 'Ask google';
+          } else if (Math.random() < 0.6) {
+            output.textContent = 'Let me think about it';
+          } else if (Math.random() < 0.8) {
+            output.textContent = 'why would i know that';
+          } else {
+            output.textContent = 'stupid questions get stupid responses';
+          }
+        }
+      }
+    </script>
+
+
+    
     
 </body>
 </html>
