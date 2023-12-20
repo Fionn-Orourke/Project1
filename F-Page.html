@@ -3,16 +3,33 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="F-Style.css" />
-    <link rel="icon" type="image/x-icon" href="fimage/bose icon.png">
+    
+    <link rel="icon" type="image/x-icon" href="fimage/bose icon.png"> 
+    <br>
+    
+
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bose</title>
+    
 
     <div id="header">
+      <br>
+      <br>
+      
+      <div id="home">
+        <a href="index.html" id="nh"> home  </a>
+        <nav>
+          <a id="nh" href="#checkout" style="padding-left: 10px;">  Checkout</a>
+        </nav>
+      </div>
     </div>
 </head>
 <body id="body">
+  
+  
   <script src="f-script.js"></script>
   <div id="button-container">
     <button onclick="ImageWhite()" id="whiteButton">White</button>
@@ -34,13 +51,13 @@
               </th>
             </tr>
             <tr>
-              <td>name</td>
-              <td>quietcomfort</td>
+              <td>Name</td>
+              <td>Quietcomfort</td>
               <td>Bose 700</td>
-              <td>quietcomfort ii earbuds</td>
+              <td>Quietcomfort ii earbuds</td>
             </tr>
             <tr>
-              <td>battery life</td>
+              <td>Battery life</td>
               <td>24 hours</td>
               <td>20</td>
               <td>6 hours</td>
@@ -58,25 +75,25 @@
               <td>Active Noise cancelling</td>
             </tr>
             <tr>
-              <td>wired included</td>
+              <td>Wired included</td>
               <td>yes</td>
               <td>yes</td>
               <td>no</td>
             </tr>
             <tr>
-              <td>microphone</td>
+              <td>Microphone</td>
               <td>Built in</td>
               <td>Built in</td>
               <td>Built in</td>
             </tr>
             <tr>
-              <td>weight</td>
+              <td>Weight</td>
               <td>240g</td>
               <td>255</td>
               <td>12.48g(6.24g each)</td>
             </tr>
             <tr>
-              <td>earcup</td>
+              <td>Earcup</td>
               <td>Over-ear</td>
               <td>Over-ear</td>
               <td>in-ear</td>
@@ -106,45 +123,10 @@
       <button id="checkbutton" onclick="checkout()">Checkout</button>
       <br>
       <p id="cost" ></p>
+      <hr>
+      <p id="proc" >Proceed with payment</p>
+      <button id="ceed" onclick="confirm()">Proceed</button>
     </div>
-
-
-
-
-
-
-    <div>
-      <input type="text" id="userInput" placeholder="asksomething...">
-      <button onclick="respond()">Enter</button>
-      <div id="response"></div>
-    </div>
-  
-    <script>
-      function respond() {
-        var input = document.getElementById('userInput').value;
-        var output = document.getElementById('response');
-        if (input.toLowerCase() === 'hi' ) {
-          output.textContent = 'Hello';
-        } else if (input.toLowerCase() === 'no') {
-          output.textContent = 'Yes';
-        } else { 
-          if (Math.random() < 0.2) {
-            output.textContent = 'I dont kow';
-          } else if (Math.random() < 0.4) {
-            output.textContent = 'Ask google';
-          } else if (Math.random() < 0.6) {
-            output.textContent = 'Let me think about it';
-          } else if (Math.random() < 0.8) {
-            output.textContent = 'why would i know that';
-          } else {
-            output.textContent = 'stupid questions get stupid responses';
-          }
-        }
-      }
-    </script>
-
-
-    
     
 </body>
 </html>

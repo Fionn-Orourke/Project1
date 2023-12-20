@@ -25,8 +25,15 @@ function checkout(){
         var cost = 290* b1+249* b2+244.95* b3;
         tot.innerText = "Your total cost is €" + cost;
     }
-    
-
-
-
+}
+function confirm(){
+    let text;
+    let name= prompt("Please enter youre name:","Patrick Star");
+    if (name == null || name == ""){
+        text = "Payment cancelled.";
+        
+    }else{
+        text = "Order placed for "+ name;
+    }
+    document.getElementById("proc").innerHTML = text;
 }
